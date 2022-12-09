@@ -5,10 +5,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/main.js" defer></script>
+	<style>
+		.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: rgb(15 2 6);
+	width: 100vw;
+	height: 100vh;
+  z-index: 1001;
+	visibility: visible;
+	opacity: 1;
+	transition: all .75 ease;
+}
+.preloader img{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+	width: 10%;
+	height: 20%;
+	transform: translateX(-50%);
+}
+	</style>
+		<script src="js/main.js" defer></script>
 	<title>Beutiful</title>
 </head>
 <body>
+	<div class="preloader">
+		<img src="img/kaban.gif" alt="">
+	</div>
 	<div class="container">
 		<section class="gallery">
 			<div class="container">
@@ -71,7 +99,7 @@
 					</div>
 		
 					<div class="frame"></div>
-					
+
 					<div class="frame">
 						<div class="frame__content">
 							<video class="frame-media frame-media_left" src="media/video_optimized.mp4" autoplay loop muted></video>
@@ -114,4 +142,10 @@
 		</section>
 	</div>
 </body>
+<style>
+	.preloader{
+	visibility: hidden;
+	opacity: 0;
+}
+</style>
 </html>
