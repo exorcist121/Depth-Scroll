@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,88 +8,93 @@
 	<link rel="stylesheet" href="css/style.css">
 	<style>
 		.preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  background: rgb(15 2 6);
-	width: 100vw;
-	height: 100vh;
-  z-index: 1001;
-	visibility: visible;
-	opacity: 1;
-	transition: all .75 ease;
-}
-.preloader img{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-	width: 10%;
-	height: 20%;
-	transform: translateX(-50%);
-}
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			background: rgb(15 2 6);
+			width: 100vw;
+			height: 100vh;
+			z-index: 1001;
+			transition: all .75 ease;
+		}
+		.preloader__show{
+			visibility: visible;
+			opacity: 1;
+		}
+		.preloader img {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			width: 10%;
+			height: 20%;
+			transform: translateX(-50%);
+		}
 	</style>
-		<script src="js/main.js" defer></script>
+	<script src="js/main.js" defer></script>
 	<title>Beutiful</title>
 </head>
+
 <body>
-	<div class="preloader">
+	<div class="preloader preloader__show">
 		<img src="img/kaban.gif" alt="">
 	</div>
 	<div class="container">
 		<section class="gallery">
 			<div class="container">
 				<section class="gallery">
-		
+
 					<div class="frame">
 						<div class="frame__content">
 							<h2>Beautiful World</h2>
 						</div>
 					</div>
-		
+
 					<div class="frame">
 						<div class="frame__content">
 							<div class="frame-media frame-media_left" style="background-image: url(img/1.jpg)"></div>
 						</div>
 					</div>
-		
+
 					<div class="frame frame__opacity">
 						<div class="frame__content">
 							<video class="frame-media frame-media_right" src="media/video_optimized.mp4" autoplay loop muted></video>
 						</div>
 					</div>
-		
+
 					<div class="frame"></div>
-		
+
 					<div class="frame">
 						<div class="frame__content text-right">
 							<h3>Pure planet</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur elit adipisicing. Nemo fugit, rerum dolorem assumenda consequatur dicta error iure laboriosam temporibus.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur elit adipisicing. Nemo fugit, rerum dolorem assumenda
+								consequatur dicta error iure laboriosam temporibus.</p>
 						</div>
 					</div>
-		
+
 					<div class="frame frame__opacity">
 						<div class="frame__content">
 							<div class="frame-media frame-media_left" style="background-image: url(img/2.jpg)"></div>
 						</div>
 					</div>
-		
+
 					<div class="frame"></div>
-		
+
 					<div class="frame frame__opacity">
 						<div class="frame__content">
 							<div class="frame-media frame-media_right" style="background-image: url(img/3.jpg)"></div>
 						</div>
 					</div>
-		
+
 					<div class="frame"></div>
-		
+
 					<div class="frame">
 						<div class="frame__content text-left">
 							<h3>Ask the Mountains</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur elit. Rerum dolorem assumenda consequatur dicta error iure laboriosam temporibus omnis quae eaque aliquam esse unde accusamus dolores non soluta.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur elit. Rerum dolorem assumenda consequatur dicta error iure
+								laboriosam temporibus omnis quae eaque aliquam esse unde accusamus dolores non soluta.</p>
 						</div>
 					</div>
 
@@ -97,7 +103,7 @@
 							<div class="frame-media frame-media_right" style="background-image: url(img/4.jpg)"></div>
 						</div>
 					</div>
-		
+
 					<div class="frame"></div>
 
 					<div class="frame">
@@ -105,22 +111,23 @@
 							<video class="frame-media frame-media_left" src="media/video_optimized.mp4" autoplay loop muted></video>
 						</div>
 					</div>
-		
+
 					<div class="frame"></div>
 					<div class="frame"></div>
-		
+
 					<div class="frame frame__opacity">
 						<div class="frame__content">
 							<div class="frame-media frame-media_right" style="background-image: url(img/5.jpg)"></div>
 						</div>
 					</div>
-		
+
 					<div class="frame"></div>
 
 					<div class="frame frame__opacity">
 						<div class="frame__content text-left">
 							<h3>Pure planet</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur elit adipisicing. Nemo fugit, rerum dolorem assumenda consequatur dicta error iure laboriosam temporibus.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur elit adipisicing. Nemo fugit, rerum dolorem assumenda
+								consequatur dicta error iure laboriosam temporibus.</p>
 						</div>
 					</div>
 
@@ -132,20 +139,23 @@
 							<video class="frame-media" src="media/video_optimized.mp4" autoplay loop muted></video>
 						</div>
 					</div>
-		
+
 					<div class="frame"></div>
 					<div class="frame"></div>
-		
+
 					<div class="frame">
 						<div class="frame__content">© Sadovod company</div>
 					</div>
-		</section>
-	</div>
+				</section>
+			</div>
+			<img class="soundbutton paused" src="img/sound.gif" alt="Alt">
+			<audio class="audio" src="media/ambient.mp3" loop></audio>
 </body>
 <style>
-	.preloader{
-	visibility: hidden;
-	opacity: 0;
-}
+	.preloader__show {
+		visibility: hidden;
+		opacity: 0;
+	}
 </style>
+
 </html>
