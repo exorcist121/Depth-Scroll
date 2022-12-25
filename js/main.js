@@ -1,5 +1,11 @@
 /******/ (function() { // webpackBootstrap
 var __webpack_exports__ = {};
+window.onload = function(){
+	setTimeout(function(){
+		document.body.classList.add('loaded')
+	})
+	}
+
 // Scrool
 let zSpacing = -1000,
 lastPos = zSpacing / 5,
@@ -39,5 +45,6 @@ window.onfocus = function() {
 window.onblur = function() {
 	audio.pause()
 }
+
 /******/ })()
 ;

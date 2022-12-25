@@ -10,7 +10,7 @@ body{
 	overflow: auto;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-	background: #000;
+	background: rgb(15 2 6);
 	color: white;
 	font-size: calc($index * .8);
 	font-family: 'raleway', sans-serif;
@@ -67,7 +67,7 @@ h1, h2, h3, h4 {
 	left: calc($side-small / 2 * $index + $gutter);
 }
 .frame__opacity {
-	background-color: rgb(0 0 0 / .87);
+	background-color: rgb(15 2 6 / .87);
 }
 video.frame-media {
 	width: calc($index * $side-big);

@@ -1,3 +1,9 @@
+window.onload = function(){
+	setTimeout(function(){
+		document.body.classList.add('loaded')
+	})
+	}
+
 // Scrool
 let zSpacing = -1000,
 lastPos = zSpacing / 5,

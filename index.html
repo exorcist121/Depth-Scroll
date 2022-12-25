@@ -20,10 +20,6 @@
 			z-index: 1001;
 			transition: all .75 ease;
 		}
-		.preloader__show{
-			visibility: visible;
-			opacity: 1;
-		}
 		.preloader img {
 			position: absolute;
 			top: 40%;
@@ -32,19 +28,22 @@
 			height: 20%;
 			transform: translateX(-50%);
 		}
+		.loaded .preloader{
+			opacity: 0;
+			transition: all .75 ease;
+			z-index: -1;
+		}
 	</style>
 	<script src="js/main.js" defer></script>
 	<title>Beutiful</title>
 </head>
 
 <body>
-	<div class="preloader preloader__show">
+	<div class="preloader" id="preloader">
 		<img src="img/kaban.gif" alt="">
 	</div>
 	<div class="container">
 		<section class="gallery">
-			<div class="container">
-				<section class="gallery">
 
 					<div class="frame">
 						<div class="frame__content">

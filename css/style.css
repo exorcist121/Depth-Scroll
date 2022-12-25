@@ -91,7 +91,7 @@ body {
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  background: #000;
+  background: rgb(15, 2, 6);
   color: white;
   font-size: calc((1vh + 1vw) * 0.8);
   font-family: "raleway", sans-serif;
@@ -169,7 +169,7 @@ h1, h2, h3, h4 {
 }
 
 .frame__opacity {
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(15, 2, 6, 0.87);
 }
 
 video.frame-media {
